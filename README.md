@@ -1,6 +1,6 @@
 # Passo a passo, processo, insights e possibilidades aprendidas durante o conteúdo **"Azure Cognitive Search: Utilizando AI Search para indexação e consulta de Dados"**
 
-## **1. Passo a passo:**
+## **1. Passo a passo**
 
 **Primeiramente** vamos ter que criar três recursos no [Portal do Azure](https://portal.azure.com). Um Recurso do *Azure AI Search*, *IA do Azure* e armazenamento. 
 
@@ -29,7 +29,7 @@ Com essa etapa feita, agora vamos **Indexar os documentos**
 No [Portal do Azure](https://portal.azure.com), navegue até o recurso ***Azure AI Search***, na página Visão geral e selecione **Importar dados**.
 
 
-![Imagem do passo a passo, sobre como achar a opção "importar dados"](Praticas\PassoAPasso\Part4.png)
+![Imagem do passo a passo, sobre como achar a opção "importar dados"](https://github.com/JPLabussiereF/Inteligencia-de-Documentos-e-Mineracao-de-Conhecimento-Lab04/blob/main/Praticas/PassoAPasso/Part4.png?raw=true)
 
 Na página **Conectar-se aos seus dados**, na lista **Fonte de Dados**, selecione ***Azure Blob Storage***. Preencha os detalhes do armazenamento de dados com os seguintes valores:
 
@@ -55,7 +55,7 @@ Depois, **Selecione Próximo: Adicionar habilidades cognitivas**, caso queira **
 
 **Selecione os seguintes campos enriquecidos:**
 
-![Imagem do passo a passo, o que colocar em: "campos enriquecidos"](Praticas\PassoAPasso\Part5.png)
+![Imagem do passo a passo, o que colocar em: "campos enriquecidos"](https://github.com/JPLabussiereF/Inteligencia-de-Documentos-e-Mineracao-de-Conhecimento-Lab04/blob/main/Praticas/PassoAPasso/Part5.png?raw=true)
 
 Em **Salvar enriquecimentos em um armazenamento de conhecimento**, selecione:
 
@@ -67,7 +67,7 @@ Em **Salvar enriquecimentos em um armazenamento de conhecimento**, selecione:
 - Detalhes da imagem
 - Referências de imagem
 
-![Imagem de observação](Praticas\PassoAPasso\Obs.png)
+![Imagem de observação](https://github.com/JPLabussiereF/Inteligencia-de-Documentos-e-Mineracao-de-Conhecimento-Lab04/blob/main/Praticas/PassoAPasso/Obs.png?raw=true)
 
 - Selecione **projeções de blob do Azure: Documento**. O qual, é uma configuração para o nome do contêiner com as exibições preenchidas automaticamente do contêiner de armazenamento de conhecimento. Não altere o nome do contêiner.
 
@@ -85,17 +85,17 @@ Altere o **nome do indexador** para **coffee-indexer** e deixe a **programação
 
 Volte à página de recursos do *Azure AI Search*. No painel esquerdo, em **Gerenciamento de pesquisa**, selecione **Indexadores**. Selecione o **indexador de café** recém-criado. Espere um minuto e selecione **↻ Atualize** até que o **Status** indique sucesso. Depois disso, voce pode selecionar o nome do indexador para ver mais detalhes.
 
-![Mais detalhes do indexador](Praticas\PassoAPasso\Part6.png)
+![Mais detalhes do indexador](https://github.com/JPLabussiereF/Inteligencia-de-Documentos-e-Mineracao-de-Conhecimento-Lab04/blob/main/Praticas/PassoAPasso/Part6.png?raw=true)
 
 Agora, vamos aprender a **Consultar o índice**
 
 Na página Visão geral do serviço de pesquisa, selecione **Explorador de pesquisa** na parte superior da tela.
 
-![Explorador de pesquisa](Praticas\PassoAPasso\Part7.png)
+![Explorador de pesquisa](https://github.com/JPLabussiereF/Inteligencia-de-Documentos-e-Mineracao-de-Conhecimento-Lab04/blob/main/Praticas/PassoAPasso/Part7.png?raw=true)
 
 Observe como o índice selecionado é o índice de café que você criou. Abaixo do índice selecionado, altere a visualização para **JSON view**.
 
-![JSON view](Praticas\PassoAPasso\Part8.png)
+![JSON view](https://github.com/JPLabussiereF/Inteligencia-de-Documentos-e-Mineracao-de-Conhecimento-Lab04/blob/main/Praticas/PassoAPasso/Part8.png?raw=true)
 
 No campo **do editor de consultas JSON**, copie e cole:
 
@@ -136,23 +136,23 @@ E por fim, vamos **revisar o armazenamento de conhecimento**, para finalizar a p
 
 No portal do Azure, navegue de volta para a sua conta de armazenamento do Azure, No painel do menu esquerdo, selecione ***Containers***. Selecione o contêiner **de armazenamento de conhecimento**.
 
-![Armazenamento de conhecimento](Praticas\PassoAPasso\part9.png)
+![Armazenamento de conhecimento](https://github.com/JPLabussiereF/Inteligencia-de-Documentos-e-Mineracao-de-Conhecimento-Lab04/blob/main/Praticas/PassoAPasso/Part9.png?raw=true)
 
 Em seguida, selecione qualquer um dos itens e clique no arquivo **objectprojection.json**.
 
-![objectprojection.json](Praticas\PassoAPasso\Part10.png)
+![objectprojection.json](https://github.com/JPLabussiereF/Inteligencia-de-Documentos-e-Mineracao-de-Conhecimento-Lab04/blob/main/Praticas/PassoAPasso/Part10.png?raw=true)
 
 E selecione **Editar** para ver o JSON produzido para um dos documentos do seu armazenamento de dados do Azure.
 
-![Editar](Praticas\PassoAPasso\Part11.png)
+![Editar](https://github.com/JPLabussiereF/Inteligencia-de-Documentos-e-Mineracao-de-Conhecimento-Lab04/blob/main/Praticas/PassoAPasso/Part11.png?raw=true)
 
 Selecione a localização atual do blob de armazenamento no canto superior esquerdo da tela para retornar à conta de armazenamento Containers.
 
-![Rertornar](Praticas\PassoAPasso\Part12.png)
+![Rertornar](https://github.com/JPLabussiereF/Inteligencia-de-Documentos-e-Mineracao-de-Conhecimento-Lab04/blob/main/Praticas/PassoAPasso/Part12.png?raw=true)
 
 Em Containers, selecione o contêiner coffee-skillset-image-projection. Selecione qualquer um dos itens.
 
-![coffee-skillset-image-projection](Praticas\PassoAPasso\Part13.png)
+![coffee-skillset-image-projection](https://github.com/JPLabussiereF/Inteligencia-de-Documentos-e-Mineracao-de-Conhecimento-Lab04/blob/main/Praticas/PassoAPasso/Part13.png?raw=true)
 
 Selecione qualquer um dos arquivos **.jpg**. Selecione **Editar** para ver a imagem armazenada no documento. Observe como todas as imagens dos documentos são armazenadas desta forma.
 
@@ -160,25 +160,40 @@ Selecione a localização atual do blob de armazenamento no canto superior esque
 
 Selecione **Navegador de armazenamento** no painel esquerdo e selecione **Tabelas**. Há uma tabela para cada entidade no índice. Selecione a tabela coffeeSkillsetKeyPhrases.
 
-![Tabela](Praticas\PassoAPasso\Part14.png)
+![Tabela](https://github.com/JPLabussiereF/Inteligencia-de-Documentos-e-Mineracao-de-Conhecimento-Lab04/blob/main/Praticas/PassoAPasso/Part14.png?raw=true)
 
 - Observe as frases-chave que o armazenamento de conhecimento conseguiu capturar do conteúdo das avaliações. Muitos dos campos são chaves, portanto você pode vincular as tabelas como um banco de dados relacional. O último campo mostra as frases-chave que foram extraídas pelo conjunto de habilidades.
 
+## **2. Utilização AI Search para indexação e consulta de Dados**
 
 
+A utilização da AI (Inteligência Artificial) para indexação e consulta de dados, conhecida como AI Search, é uma abordagem avançada para encontrar e acessar informações relevantes em grandes conjuntos de dados. Ao contrário dos métodos tradicionais de pesquisa que dependem de palavras-chave ou estruturas de dados predefinidas, o AI Search emprega algoritmos de aprendizado de máquina e processamento de linguagem natural para entender o conteúdo e o contexto dos dados.
 
+Na indexação, a AI Search analisa e organiza os dados de forma inteligente, identificando padrões, relacionamentos e significados semânticos. Isso permite uma indexação mais precisa e uma recuperação mais eficiente de informações relevantes durante as consultas.
 
+Durante a consulta, a AI Search interpreta as perguntas ou consultas dos usuários de forma mais sofisticada, considerando o contexto e a intenção por trás das palavras-chave. Isso resulta em resultados de pesquisa mais relevantes e personalizados, mesmo em conjuntos de dados complexos e não estruturados.
 
+A AI Search é amplamente utilizada em uma variedade de contextos, como motores de busca na web, sistemas de gerenciamento de conteúdo, plataformas de comércio eletrônico e assistentes virtuais. Sua capacidade de compreender o significado subjacente dos dados torna-a uma ferramenta poderosa para a descoberta e a análise de informações em um mundo cada vez mais rico em dados.
 
+## **3. Recomendação de Tópicos para estudos**
 
+- **Algoritmos de Indexação:** Explore os algoritmos utilizados na indexação de dados, como indexação invertida, árvores B e hashing.
 
+- **Processamento de Linguagem Natural (PLN):** Aprofunde-se nos conceitos e técnicas de PLN aplicados à compreensão de consultas de pesquisa e ao entendimento de documentos.
 
+- **Aprendizado de Máquina para Recomendação:** Estude como os modelos de aprendizado de máquina são usados para recomendar resultados de pesquisa personalizados com base no comportamento do usuário e no contexto.
 
+- **Estratégias de Recuperação de Informações:** Analise as estratégias e técnicas para recuperar informações relevantes em grandes conjuntos de dados, incluindo busca booleana, busca vetorial e busca probabilística.
 
+- **Ferramentas e Plataformas de AI Search:** Explore as principais ferramentas e plataformas disponíveis para implementar sistemas de AI Search, como Elasticsearch, Apache Solr, Algolia, entre outras.
 
+- **Desafios e Soluções em AI Search:** Estude os desafios enfrentados na implementação de sistemas de AI Search, como escalabilidade, precisão da pesquisa e interpretação de consultas complexas, e aprenda sobre as soluções propostas para superar esses desafios.
 
+- **Aplicações em Setores Específicos:** Pesquise como o AI Search é aplicado em setores específicos, como saúde, comércio eletrônico, finanças, mídia e entretenimento, para melhorar a descoberta e a análise de dados.
 
+- **Ética e Privacidade em AI Search:** Explore as questões éticas e de privacidade relacionadas ao uso de AI Search, como a responsabilidade dos algoritmos, a transparência nos resultados da pesquisa e o uso ético dos dados do usuário.
 
+**Esses tópicos fornecem uma base sólida, bons estudos!**
 
 ## Referências
 
