@@ -47,7 +47,7 @@ Depois, **Selecione Próximo: Adicionar habilidades cognitivas**, caso queira **
 
 - Altere o **nome da qualificação** para **coffee-skillset**.
 - Marque a caixa de seleção **Habilitar OCR e mesclar todo o texto no campo merged_content**.
-> ❗ **Nota** É importante selecionar **Habilitar OCR** para ver todas as opções de campo enriquecido.
+> ❗ **Nota:** É importante selecionar **Habilitar OCR** para ver todas as opções de campo enriquecido.
 
 - Certifique-se de que o **campo Dados de origem** esteja configurado como **merged_content**.
 - Altere o **nível de granularidade de enriquecimento** para **Páginas (blocos de 5.000 caracteres)**.
@@ -130,7 +130,7 @@ Agora vamos filtrar por sentimento. No campo **do editor de consultas JSON**, co
 
 Selecione **Pesquisar**. A consulta pesquisa todos os documentos no índice e filtra revisões com sentimento negativo. Você deveria ver `1` no `@odata.count` campo.
 
-> ❗ **Nota** Veja como os resultados são classificados por **`@search.score`**. Esta é a pontuação atribuída pelo mecanismo de pesquisa para mostrar o quão próximos os resultados correspondem à consulta fornecida.
+> ❗ **Nota:** Veja como os resultados são classificados por **`@search.score`**. Esta é a pontuação atribuída pelo mecanismo de pesquisa para mostrar o quão próximos os resultados correspondem à consulta fornecida.
 
 E por fim, vamos **revisar o armazenamento de conhecimento**, para finalizar a prática.
 
